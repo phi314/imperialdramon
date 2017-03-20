@@ -7,7 +7,10 @@
  * @package Listable
  */
 
-get_header(); ?>
+get_header();
+
+?>
+
 
 <div id="primary" class="content-area">
 	<div class="entry-content">

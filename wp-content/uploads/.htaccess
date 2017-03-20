@@ -1,0 +1,21 @@
+## BEGIN WordPress
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+#</IfModule>
+
+## END WordPress
+
+## MAINTENANCE MODE
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000
+RewriteCond %{REQUEST_URI} !/wp-maintenance/index.html$ [NC]
+RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif) [NC]
+RewriteRule .* /wp-maintenance/index.html [R=503,L]
+</IfModule>
+## END MAINTENANCE MODE

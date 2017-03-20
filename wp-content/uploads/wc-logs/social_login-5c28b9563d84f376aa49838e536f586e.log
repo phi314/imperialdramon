@@ -1,0 +1,13 @@
+12-22-2016 @ 11:06:06 - Error: Response error, Response: Array
+(
+    [error] => Array
+        (
+            [provider] => instagram
+            [code] => invalid_state
+            [message] => The provider state parameter does not match.
+            [raw] => 
+        )
+
+    [timestamp] => 2016-12-22T04:06:04+00:00
+)
+

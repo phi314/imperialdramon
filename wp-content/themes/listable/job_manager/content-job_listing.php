@@ -27,6 +27,7 @@ if ( ! is_wp_error( $terms ) && ( is_array( $terms ) || is_object( $terms ) ) ) 
 	}
 }
 
+
 $listing_classes = 'card  card--listing';
 $listing_is_claimed = false;
 $listing_is_featured = false;

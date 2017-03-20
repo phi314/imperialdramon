@@ -46,3 +46,4 @@ $has_image = false; ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
+
